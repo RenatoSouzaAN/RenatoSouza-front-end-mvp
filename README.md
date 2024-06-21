@@ -25,7 +25,7 @@ To get a local copy up and running follow these steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/dmarket-mvp.git
+   git clone https://github.com/RenatoSouzaAN/RenatoSouza/front-end-mvp
    ```
 2. Navigate to the project directory
    ```sh
