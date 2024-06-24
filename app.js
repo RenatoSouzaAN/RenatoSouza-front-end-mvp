@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         console.log('Product to add:', product);
     
-        fetch(apiUrl, {
+        fetch(`${apiUrl}/create`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('addProductForm').addEventListener('submit', addProduct);
     
     function deleteProduct(productId) {
-        fetch(`${apiUrl}/${productId}`, { method: 'DELETE' })
+        fetch(`${apiUrl}/${productId}/delete`, { method: 'DELETE' })
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to delete product');
