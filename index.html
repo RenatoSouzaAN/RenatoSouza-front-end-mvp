@@ -23,24 +23,44 @@
     </header>
 
     <section class="newItem">   
-      <div class="popup" id="popupContainer">
+      <div class="popup" id="addPopupContainer" style="display: none;">
         <div class="popup-content">
-          <span class="close" id="closePopup">&times;</span>
-          <h2>Adicionar Novo Produto</h2>
+          <span class="close" id="closeAddPopup">&times;</span>
+          <h2>Adicionar Produto</h2>
           <form id="addProductForm">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required /><br /><br />
-            <label for="description">Descrição:</label>
-            <textarea id="description" name="description" required rows="4" cols="50"></textarea><br /><br />
-            <label for="price">Preço:</label>
-            <input type="text" id="price" name="price" required placeholder="R$ 0,00" /><br /><br />
-            <label for="quantity">Quantidade:</label>
-            <input type="number" id="quantity" name="quantity" required min="0" /><br /><br />
-            <button type="submit">Adicionar Produto</button>
+            <label for="addName">Nome:</label>
+            <input type="text" id="addName" name="name" required /><br /><br />
+            <label for="addDescription">Descrição:</label>
+            <textarea id="addDescription" name="description" required rows="4" cols="50"></textarea><br /><br />
+            <label for="addPrice">Preço:</label>
+            <input type="text" id="addPrice" name="price" required placeholder="R$ 0,00" /><br /><br />
+            <label for="addQuantity">Quantidade:</label>
+            <input type="number" id="addQuantity" name="quantity" required min="0" /><br /><br />
+            <input type="submit" id="submitButton" value="Adicionar Produto">
           </form>
         </div>
       </div>
     </section>
+
+    <section class="editItem">   
+      <div class="popup" id="editPopupContainer" style="display: none;">
+          <div class="popup-content">
+              <span class="close" id="closeEditPopup">&times;</span>
+              <h2>Editar Produto</h2>
+              <form id="editProductForm">
+                  <label for="editName">Nome:</label>
+                  <div id="editName"></div><br /><br />
+                  <label for="editDescription">Descrição:</label>
+                  <textarea id="editDescription" name="description" required rows="4" cols="50"></textarea><br /><br />
+                  <label for="editPrice">Preço:</label>
+                  <input type="text" id="editPrice" name="price" required placeholder="R$ 0,00" /><br /><br />
+                  <label for="editQuantity">Quantidade:</label>
+                  <input type="number" id="editQuantity" name="quantity" required min="0" /><br /><br />
+                  <input type="submit" id="submitButton" value="Finalizar Edição">
+              </form>
+          </div>
+      </div>
+  </section>
 
     <section class="deleteItem" style="display: none">
       <h2>Deletar Produto</h2>
