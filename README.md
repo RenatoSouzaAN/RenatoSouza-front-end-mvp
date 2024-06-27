@@ -1,6 +1,6 @@
 # Front-End
 
-This is the front-end MVP made to fullfill the requirements in the 'Assessment Requirements and Composition', it's a SPA (Single Page Application). This web application allows users to add, view, and delete products, it requires the back-end api to be up and running. -- The back-end has it own repository, the link for is below --
+This is the front-end MVP made to fullfill the requirements in the 'Assessment Requirements and Composition', it's a SPA (Single Page Application). This web application allows users to add, view, update, and delete products, it requires the back-end api to be up and running. -- The back-end has it own repository, the link for is below --
 
 
 Back-end repository: https://github.com/RenatoSouzaAN/RenatoSouza/back-end-mvp
