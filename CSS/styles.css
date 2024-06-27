@@ -1,384 +1,427 @@
 :root {
-    --background: #f7fafc;
-    --primary: #4790d0;
-    --secondary: #86bbea;
-    --accent: #50a4ee;
-    --text: #090e13;
-    --textcontrast: #64d97b;
-    --bgcontrast: #64d97b;
-    --primarycontrast: #ffdd00;
-    --secondarycontrast: #64d97b;
-    --accentcontrast: #64d97b;
-    --text5: hsl(210, 36%, 5%, 5%);
-    --text10: hsl(210, 36%, 5%, 10%);
-    --text15: hsl(210, 36%, 5%, 15%);
-    --text20: hsl(210, 36%, 5%, 20%);
-    --text25: hsl(210, 36%, 5%, 25%);
-    --text30: hsl(210, 36%, 5%, 30%);
-    --text35: hsl(210, 36%, 5%, 35%);
-    --text40: hsl(210, 36%, 5%, 40%);
-    --text45: hsl(210, 36%, 5%, 45%);
-    --text50: hsl(210, 36%, 5%, 50%);
-    --text55: hsl(210, 36%, 5%, 55%);
-    --text60: hsl(210, 36%, 5%, 60%);
-    --text65: hsl(210, 36%, 5%, 65%);
-    --text70: hsl(210, 36%, 5%, 70%);
-    --text75: hsl(210, 36%, 5%, 75%);
-    --text80: hsl(210, 36%, 5%, 80%);
-    --text85: hsl(210, 36%, 5%, 85%);
-    --text90: hsl(210, 36%, 5%, 90%);
-    --text95: hsl(210, 36%, 5%, 95%);
-    --primary5: hsl(208, 59%, 55%, 5%);
-    --primary10: hsl(208, 59%, 55%, 10%);
-    --primary15: hsl(208, 59%, 55%, 15%);
-    --primary20: hsl(208, 59%, 55%, 20%);
-    --primary25: hsl(208, 59%, 55%, 25%);
-    --primary30: hsl(208, 59%, 55%, 30%);
-    --primary35: hsl(208, 59%, 55%, 35%);
-    --primary40: hsl(208, 59%, 55%, 40%);
-    --primary45: hsl(208, 59%, 55%, 45%);
-    --primary50: hsl(208, 59%, 55%, 50%);
-    --primary55: hsl(208, 59%, 55%, 55%);
-    --primary60: hsl(208, 59%, 55%, 60%);
-    --primary65: hsl(208, 59%, 55%, 65%);
-    --primary70: hsl(208, 59%, 55%, 70%);
-    --primary75: hsl(208, 59%, 55%, 75%);
-    --primary80: hsl(208, 59%, 55%, 80%);
-    --primary85: hsl(208, 59%, 55%, 85%);
-    --primary90: hsl(208, 59%, 55%, 90%);
-    --primary95: hsl(208, 59%, 55%, 95%);
-    --secondary5: hsl(208, 70%, 72%, 5%);
-    --secondary10: hsl(208, 70%, 72%, 10%);
-    --secondary15: hsl(208, 70%, 72%, 15%);
-    --secondary20: hsl(208, 70%, 72%, 20%);
-    --secondary25: hsl(208, 70%, 72%, 25%);
-    --secondary30: hsl(208, 70%, 72%, 30%);
-    --secondary35: hsl(208, 70%, 72%, 35%);
-    --secondary40: hsl(208, 70%, 72%, 40%);
-    --secondary45: hsl(208, 70%, 72%, 45%);
-    --secondary50: hsl(208, 70%, 72%, 50%);
-    --secondary55: hsl(208, 70%, 72%, 55%);
-    --secondary60: hsl(208, 70%, 72%, 60%);
-    --secondary65: hsl(208, 70%, 72%, 65%);
-    --secondary70: hsl(208, 70%, 72%, 70%);
-    --secondary75: hsl(208, 70%, 72%, 75%);
-    --secondary80: hsl(208, 70%, 72%, 80%);
-    --secondary85: hsl(208, 70%, 72%, 85%);
-    --secondary90: hsl(208, 70%, 72%, 90%);
-    --secondary95: hsl(208, 70%, 72%, 95%);
-    --accent5: hsl(208, 82%, 62%, 5%);
-    --accent10: hsl(208, 82%, 62%, 10%);
-    --accent15: hsl(208, 82%, 62%, 15%);
-    --accent20: hsl(208, 82%, 62%, 20%);
-    --accent25: hsl(208, 82%, 62%, 25%);
-    --accent30: hsl(208, 82%, 62%, 30%);
-    --accent35: hsl(208, 82%, 62%, 35%);
-    --accent40: hsl(208, 82%, 62%, 40%);
-    --accent45: hsl(208, 82%, 62%, 45%);
-    --accent50: hsl(208, 82%, 62%, 50%);
-    --accent55: hsl(208, 82%, 62%, 55%);
-    --accent60: hsl(208, 82%, 62%, 60%);
-    --accent65: hsl(208, 82%, 62%, 65%);
-    --accent70: hsl(208, 82%, 62%, 70%);
-    --accent75: hsl(208, 82%, 62%, 75%);
-    --accent80: hsl(208, 82%, 62%, 80%);
-    --accent85: hsl(208, 82%, 62%, 85%);
-    --accent90: hsl(208, 82%, 62%, 90%);
-    --accent95: hsl(208, 82%, 62%, 95%);
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    background-color: var(--background);
-    color: var(--text);
-  }
-  
-  #app{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1250px;
-    margin: auto;
-  }
-  
-  header {
-    background-color: var(--primary);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    color: var(--text);
-    font-size: 2rem; 
-  }
-  
-  section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: var(--background);
-  }
+  --background: #f7fafc;
+  --primary: #4790d0;
+  --secondary: #86bbea;
+  --accent: #50a4ee;
+  --text: #090e13;
+  --textcontrast: #64d97b;
+  --bgcontrast: #64d97b;
+  --primarycontrast: #ffdd00;
+  --secondarycontrast: #64d97b;
+  --accentcontrast: #64d97b;
+  --text5: hsl(210, 36%, 5%, 5%);
+  --text10: hsl(210, 36%, 5%, 10%);
+  --text15: hsl(210, 36%, 5%, 15%);
+  --text20: hsl(210, 36%, 5%, 20%);
+  --text25: hsl(210, 36%, 5%, 25%);
+  --text30: hsl(210, 36%, 5%, 30%);
+  --text35: hsl(210, 36%, 5%, 35%);
+  --text40: hsl(210, 36%, 5%, 40%);
+  --text45: hsl(210, 36%, 5%, 45%);
+  --text50: hsl(210, 36%, 5%, 50%);
+  --text55: hsl(210, 36%, 5%, 55%);
+  --text60: hsl(210, 36%, 5%, 60%);
+  --text65: hsl(210, 36%, 5%, 65%);
+  --text70: hsl(210, 36%, 5%, 70%);
+  --text75: hsl(210, 36%, 5%, 75%);
+  --text80: hsl(210, 36%, 5%, 80%);
+  --text85: hsl(210, 36%, 5%, 85%);
+  --text90: hsl(210, 36%, 5%, 90%);
+  --text95: hsl(210, 36%, 5%, 95%);
+  --primary5: hsl(208, 59%, 55%, 5%);
+  --primary10: hsl(208, 59%, 55%, 10%);
+  --primary15: hsl(208, 59%, 55%, 15%);
+  --primary20: hsl(208, 59%, 55%, 20%);
+  --primary25: hsl(208, 59%, 55%, 25%);
+  --primary30: hsl(208, 59%, 55%, 30%);
+  --primary35: hsl(208, 59%, 55%, 35%);
+  --primary40: hsl(208, 59%, 55%, 40%);
+  --primary45: hsl(208, 59%, 55%, 45%);
+  --primary50: hsl(208, 59%, 55%, 50%);
+  --primary55: hsl(208, 59%, 55%, 55%);
+  --primary60: hsl(208, 59%, 55%, 60%);
+  --primary65: hsl(208, 59%, 55%, 65%);
+  --primary70: hsl(208, 59%, 55%, 70%);
+  --primary75: hsl(208, 59%, 55%, 75%);
+  --primary80: hsl(208, 59%, 55%, 80%);
+  --primary85: hsl(208, 59%, 55%, 85%);
+  --primary90: hsl(208, 59%, 55%, 90%);
+  --primary95: hsl(208, 59%, 55%, 95%);
+  --secondary5: hsl(208, 70%, 72%, 5%);
+  --secondary10: hsl(208, 70%, 72%, 10%);
+  --secondary15: hsl(208, 70%, 72%, 15%);
+  --secondary20: hsl(208, 70%, 72%, 20%);
+  --secondary25: hsl(208, 70%, 72%, 25%);
+  --secondary30: hsl(208, 70%, 72%, 30%);
+  --secondary35: hsl(208, 70%, 72%, 35%);
+  --secondary40: hsl(208, 70%, 72%, 40%);
+  --secondary45: hsl(208, 70%, 72%, 45%);
+  --secondary50: hsl(208, 70%, 72%, 50%);
+  --secondary55: hsl(208, 70%, 72%, 55%);
+  --secondary60: hsl(208, 70%, 72%, 60%);
+  --secondary65: hsl(208, 70%, 72%, 65%);
+  --secondary70: hsl(208, 70%, 72%, 70%);
+  --secondary75: hsl(208, 70%, 72%, 75%);
+  --secondary80: hsl(208, 70%, 72%, 80%);
+  --secondary85: hsl(208, 70%, 72%, 85%);
+  --secondary90: hsl(208, 70%, 72%, 90%);
+  --secondary95: hsl(208, 70%, 72%, 95%);
+  --accent5: hsl(208, 82%, 62%, 5%);
+  --accent10: hsl(208, 82%, 62%, 10%);
+  --accent15: hsl(208, 82%, 62%, 15%);
+  --accent20: hsl(208, 82%, 62%, 20%);
+  --accent25: hsl(208, 82%, 62%, 25%);
+  --accent30: hsl(208, 82%, 62%, 30%);
+  --accent35: hsl(208, 82%, 62%, 35%);
+  --accent40: hsl(208, 82%, 62%, 40%);
+  --accent45: hsl(208, 82%, 62%, 45%);
+  --accent50: hsl(208, 82%, 62%, 50%);
+  --accent55: hsl(208, 82%, 62%, 55%);
+  --accent60: hsl(208, 82%, 62%, 60%);
+  --accent65: hsl(208, 82%, 62%, 65%);
+  --accent70: hsl(208, 82%, 62%, 70%);
+  --accent75: hsl(208, 82%, 62%, 75%);
+  --accent80: hsl(208, 82%, 62%, 80%);
+  --accent85: hsl(208, 82%, 62%, 85%);
+  --accent90: hsl(208, 82%, 62%, 90%);
+  --accent95: hsl(208, 82%, 62%, 95%);
+}
 
-  section.items{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the start (left) */
-    justify-content: flex-start; /* Align items to the top */
-    max-width: 1250px;
-    min-width: 1250px;
-    margin: auto; 
-  }
-   
-  .newItem h2,
-  .deleteItem h2 {
-    color: var(--primary);
-  }
-  
-  
-  .items {
-    justify-content: center;
-    max-width: 1250px;
-    margin: auto;
-    min-height: 200px;
-   
-    }
-    
-  .allProductsBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 12px;
-    width: 100%;
-  }
-  
-  
-  .individualProductBox {
-    flex: 0 0 calc(32% - 12px);
-    background-color: var(--secondary25);
-    border-radius: 16px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 2px -2px 8px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  .productImage img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .productName {
-    margin-top: 10px;
-    padding: 0 20px;
-  }
-  
-  .productAdditionalInformation {
-    margin-top: 10px;
-    padding: 0 20px;
-    color: var(--text); 
-    font-size: small;
-  }
-  
-  .productImage {
-    width: 100%;
-    height: auto;
-    display: block;
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+#app{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: auto;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--text);
+  font-size: 2rem; 
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--background);
+}
+
+section.items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: flex-start; /* Align items to the top */
+  max-width: 1250px;
+  min-width: 1250px;
+  margin: auto; 
+}
+ 
+.newItem h2,
+.deleteItem h2,
+.editItem h2 {
+  color: var(--primary);
+}
+
+
+.items {
+  justify-content: center;
+  max-width: 1250px;
+  margin: auto;
+  min-height: 200px;
+ 
   }
   
-  .deleteButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: var(--secondary);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 8px 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .deleteButton:hover {
-    background-color: red;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  } 
-  
-  .deleteButton img {
-    width: 15px;
-    height: 15px;
-  }
-  
-  .openPopupButton{
-    padding: 0.5em 2em;
-    background-color: var(--secondary);
-    border: none;
-    transition: transform ease 0.2s, box-shadow ease 0.2s;
-    font-size: large;
-    border-radius: 8px;
-  }
-  
-  .openPopupButton:hover{
-    transform: translate(0, -3px);
-    box-shadow: 0 20px 80px -10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .popup {
-    display: none; 
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    z-index: 999; /* Ensure it's on top of other content */
-    overflow: auto; /* Enable scrolling if needed */
-  }
-  
-  .popup-content {
-    background-color: var(--background);
-    margin: 10% auto; /* Center the popup vertically and horizontally */
-    padding: 20px;
-    border: 1px solid var(--primary);
-    border-radius: 8px;
-    max-width: 600px; /* Limit width */
-    position: relative;
-  }
-  
-  .close {
-    color: var(--text);
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover {
-    color: red;
-  }
-  
-  .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  }
-  
-  .popup-content {
-    background-color: var(--background);
-    width: 300px;
-    padding: 20px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #888;
-  }
-  
-  .popup-content form {
-    margin-top: 20px;
-  }
-  
-  .popup-content form label {
-    display: block;
-    margin-bottom: 10px;
-    color: var(--text);
-  }
-  
-  .popup-content form input[type="text"],
-  .popup-content form input[type="number"] {
-    width: calc(100% - 20px); /* Adjust input width */
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid var(--secondary);
-    border-radius: 8px;
-  }
-  
-  .popup-content form button[type="submit"] {
-    background-color: var(--primary);
-    color: var(--text);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: medium;
-  }
-  
-  .popup-content form button[type="submit"]:hover {
-    background-color: var(--accent);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="number"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4790d0;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3b7abf;
-  }
-  
-  textarea {
-    width: calc(100% - 20px); /* Adjust width according to your design */
-    height: 100px; /* Adjust height according to your design */
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid var(--secondary);
-    border-radius: 8px;
-    margin-bottom: 10px;
-    resize: none; /* Allows the user to resize the textarea vertically */
-  }
-  
-  /* Add this if you want specific styles for the description textarea */
-  textarea#description {
-    width: calc(100% - 20px); /* Adjust width according to your design */
-    height: 150px; /* Adjust height according to your design */
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid var(--secondary);
-    border-radius: 8px;
-    resize: none; /* Allows the user to resize the textarea vertically */
-  }
+.allProductsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+
+.individualProductBox {
+  flex: 0 0 calc(32% - 12px);
+  background-color: var(--secondary25);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 2px -2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.productName {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.productAdditionalInformation {
+  margin-top: 10px;
+  padding: 0 20px;
+  color: var(--text); 
+  font-size: small;
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deleteButton:hover {
+  background-color: red;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+} 
+
+.deleteButton img {
+  width: 15px;
+  height: 15px;
+}
+
+.editButton {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editButton:hover {
+  background-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+} 
+
+.editButton img {
+  width: 15px;
+  height: 15px;
+}
+
+#editName {
+  margin-bottom: 18px;
+  font-size: 1.3em;
+}
+
+.openPopupButton{
+  padding: 0.5em 2em;
+  background-color: var(--secondary);
+  border: none;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
+  font-size: large;
+  border-radius: 8px;
+}
+
+.openPopupButton:hover{
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 80px -10px rgba(0, 0, 0, 0.3);
+}
+
+.popup {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 999; /* Ensure it's on top of other content */
+  overflow: auto; /* Enable scrolling if needed */
+}
+
+.popup-content {
+  background-color: var(--background);
+  margin: 10% auto; /* Center the popup vertically and horizontally */
+  padding: 20px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  max-width: 600px; /* Limit width */
+  position: relative;
+}
+
+.close {
+  color: var(--text);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: var(--background);
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.popup-content form {
+  margin-top: 20px;
+}
+
+.popup-content form label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.popup-content form input[type="text"],
+.popup-content form input[type="number"] {
+  width: calc(100% - 20px); /* Adjust input width */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+}
+
+.popup-content form button[type="submit"] {
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+}
+
+.popup-content form button[type="submit"]:hover {
+  background-color: var(--accent);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4790d0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3b7abf;
+}
+
+#submitButton{
+  padding: 10px 20px;
+  background-color: #4790d0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background-color: #3b7abf;
+}
+
+textarea {
+  width: calc(100% - 20px); /* Adjust width according to your design */
+  height: 100px; /* Adjust height according to your design */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  resize: none; /* Allows the user to resize the textarea vertically */
+}
+
+/* Add this if you want specific styles for the description textarea */
+textarea#description {
+  width: calc(100% - 20px); /* Adjust width according to your design */
+  height: 150px; /* Adjust height according to your design */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  resize: none; /* Allows the user to resize the textarea vertically */
+}
