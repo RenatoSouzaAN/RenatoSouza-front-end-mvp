@@ -46,8 +46,9 @@ The project uses the following dependencies:
 ## API Endpoints
 
 - `GET /products` - Retrieves all products.
-- `POST /products` - Adds a new product.
-- `DELETE /products/:id` - Deletes a product by ID.
+- `POST /products/create` - Adds a new product.
+- `UPDATE /products/:id/update` - Updates a product by ID.
+- `DELETE /products/:id/delete` - Deletes a product by ID.
 
 ## License
 
