@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = "http://127.0.0.1:5000/products";
+    const apiUrl = "http://127.0.0.1:5000/api/products";
     const allProductsBox = document.getElementById("allProductsBox");
     const addProductForm = document.getElementById("addProductForm");
     const editProductForm = document.getElementById("editProductForm");
@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         deleteProductButton.className = "deleteButton";
 
         const deleteIcon = document.createElement("img");
-        deleteIcon.src = "https://cdn-icons-png.flaticon.com/512/126/126468.png";
+        deleteIcon.src =
+            "https://cdn-icons-png.flaticon.com/512/126/126468.png";
         deleteIcon.width = 15;
         deleteIcon.height = 15;
         deleteProductButton.appendChild(deleteIcon);
@@ -35,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         editProductButton.className = "editButton";
 
         const editIcon = document.createElement("img");
-        editIcon.src = "https://cdn-icons-png.flaticon.com/512/1159/1159633.png";
+        editIcon.src =
+            "https://cdn-icons-png.flaticon.com/512/1159/1159633.png";
         editIcon.width = 15;
         editIcon.height = 15;
         editProductButton.appendChild(editIcon);
@@ -91,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         "<p>Sem produtos disponíveis, experimente adicionar um.</p>";
                 } else {
                     data.forEach((product) => {
-                        const productComponent = createProductComponent(product);
+                        const productComponent =
+                            createProductComponent(product);
                         allProductsBox.appendChild(productComponent);
                     });
                 }
@@ -113,7 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const product = {
             name: formData.get("name"),
             description: formData.get("description"),
-            price: parseFloat(priceValue.replace(/[^\d,-]/g, "").replace(",", ".")), // Parsing price correctly
+            price: parseFloat(
+                priceValue.replace(/[^\d,-]/g, "").replace(",", ".")
+            ), // Parsing price correctly
             quantity: formData.get("quantity"),
         };
 
@@ -147,7 +152,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const product = {
             description: formData.get("description"),
-            price: parseFloat(priceValue.replace(/[^\d,-]/g, "").replace(",", ".")), // Parsing price correctly
+            price: parseFloat(
+                priceValue.replace(/[^\d,-]/g, "").replace(",", ".")
+            ), // Parsing price correctly
             quantity: formData.get("quantity"),
         };
 
@@ -189,7 +196,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to show/hide the popup
     function togglePopup(display, type) {
         const addPopupContainer = document.getElementById("addPopupContainer");
-        const editPopupContainer = document.getElementById("editPopupContainer");
+        const editPopupContainer =
+            document.getElementById("editPopupContainer");
 
         if (type === "add") {
             addPopupContainer.style.display = display ? "block" : "none";
@@ -206,7 +214,9 @@ document.addEventListener("DOMContentLoaded", function () {
         currentProductId = product.id;
         document.getElementById("editName").innerText = product.name;
         document.getElementById("editDescription").value = product.description;
-        document.getElementById("editPrice").value = formatCurrency(product.price);
+        document.getElementById("editPrice").value = formatCurrency(
+            product.price
+        );
         document.getElementById("editQuantity").value = product.quantity;
         togglePopup(true, "edit");
     }
@@ -308,9 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let formattedValue = value.replace(/\D/g, "");
-        formattedValue = (formattedValue / 100)
-            .toFixed(2)
-            .replace(".", ",");
+        formattedValue = (formattedValue / 100).toFixed(2).replace(".", ",");
 
         let parts = formattedValue.split(",");
         parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
